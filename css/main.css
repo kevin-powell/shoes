@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *,
 *::before,
 *::after {
@@ -14,6 +16,25 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+.ttl {
+  margin-top: -13.5rem;
+  margin: -13.5rem 0 6rem 0;
+}
+
+.ttl h1 {
+  color: #c7c7c7;
+  font-size: 4.5em;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.05em;
+}
+
+.ttl p {
+  color: #edf0f1;
+  font-size: 1.5em;
+  font-family: 'Roboto';
+  margin-top: -1rem;
 }
 
 h1,
@@ -65,10 +86,15 @@ section {
   padding: .5em 1.25em;
   background: var(--clr-accent, blue);
   border-radius: .25em;
-  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
-  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, opacity 250ms linear;
-  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  -webkit-transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
 }
 
 .btn:hover,
@@ -132,6 +158,7 @@ section {
 .featured__item:hover, .featured__item:focus {
   -webkit-transform: scale(1);
           transform: scale(1);
+  transform: rotate(6deg);
 }
 
 .featured__item:hover .featured__details, .featured__item:focus .featured__details {
@@ -154,6 +181,7 @@ section {
   opacity: 0;
   -webkit-transition: opacity 250ms linear;
   transition: opacity 250ms linear;
+  transform: rotate(-6deg);
 }
 
 .featured__details span {
